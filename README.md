@@ -1,2 +1,1 @@
 # repozytorium-test
-test
