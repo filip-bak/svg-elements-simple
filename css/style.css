@@ -1,3 +1,40 @@
+body {
+  font-size: 1.2em;
+  text-align: center;
+}
+
 h1 {
   color: black;
+}
+ul {
+  font-size: 35px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  row-gap: 20px;
+}
+@media (max-width: 1200px) {
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1000px) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+li {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: bolder;
 }
